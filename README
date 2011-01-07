@@ -1,0 +1,42 @@
+This product includes software developed by Computing Services at Carnegie Mellon 
+University (http://www.cmu.edu/computing/).  Specifically is is directly derived
+from existing SASL mechanism code from the CMU Cyrus SASL distibution.
+
+
+To build this you need to have installed:
+
+1)	Cyrus SASL
+	http://www.cyrusimap.org/
+	SASL library framework with plugin API.  Used in CMU IMAP server and others.
+
+	License: http://www.cyrusimap.org/mediawiki/index.php/Downloads#Licensing
+
+2)	OpenSSL
+	This has to be well known....
+
+3)	LibCURL
+	http://curl.haxx.se
+	"libcurl is a free and easy-to-use client-side URL transfer library, 
+	supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, 
+	LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. ..."
+
+	License: http://curl.haxx.se/docs/copyright.html
+
+4)	Jansson JSON library
+	http://www.digip.org/jansson/
+	Jansson is a C library for encoding, decoding and manipulating JSON data.
+
+	Jansson is licensed under the MIT license. 
+
+
+/* Oauth SASL plugin
+ * Bill Mills
+ * $Id:  $
+ *
+ * Copyright (c) 2010, Yahoo! Inc.
+ * All rights reserved.
+ */
+
+
+
+
