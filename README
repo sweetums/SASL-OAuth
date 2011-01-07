@@ -28,6 +28,9 @@ To build this you need to have installed:
 
 	Jansson is licensed under the MIT license. 
 
+This initial build has many warts/blemishes/shortcuts.  It does not have autoconf 
+working for example, and has the dependency directory stuff hard coded at the moment, 
+which is gross.
 
 /* Oauth SASL plugin
  * Bill Mills
