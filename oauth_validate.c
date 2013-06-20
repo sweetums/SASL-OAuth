@@ -156,7 +156,7 @@ static int oauth_validate_auxprop_store(void *glob_context,
     if (sparams->utils->decode64(authbuf, authhdrlen, decoded, authhdrlen, &decodedlen))
       ret = SASL_BADPROT; /* base64 decode failed */
 
-    if (!(jobj = json_loads(decoded, &jerror))) {
+    if (!(jobj = json_loads(decoded, 0, &jerror))) {
       ret = SASL_FAIL;
       goto cleanup;
     }

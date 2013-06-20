@@ -596,7 +596,7 @@ int ccache_fetch (void *conn_context,
   if (text->ccache_json)
     json_object_clear(text->ccache_json);
 
-  text->ccache_json = json_loadf(text->ccache_file, &jerror);
+  text->ccache_json = json_loadf(text->ccache_file, 0, &jerror);
   if (NULL == text->ccache_json) {
     /* 
     ** On fail, truncate what was in the file and provide an empty 
@@ -865,7 +865,7 @@ int oauth_client_refresh_token(void *conn_context,
       SETERROR( params->utils, errbuff);
       return SASL_BADPROT;
     }    
-    jobj = json_loads(text->curl.data, &jerror);
+    jobj = json_loads(text->curl.data, 0, &jerror);
     if (!jobj) {
 	SETERROR( params->utils, "JSON parse failed.");
 	return SASL_BADPROT;
@@ -994,7 +994,7 @@ int oauth_client_get_access(void *conn_context,
       SETERROR( params->utils, errbuff);
       return SASL_BADPROT;
     }    
-    jobj = json_loads(text->curl.data, &jerror);
+    jobj = json_loads(text->curl.data, 0, &jerror);
     if (!jobj) {
 	SETERROR( params->utils, "JSON parse failed.");
 	return SASL_BADPROT;
