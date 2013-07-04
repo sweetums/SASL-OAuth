@@ -61,13 +61,12 @@
 ################################################################
 #
 #
-# Copyright (c) 2010, Yahoo! Inc.
+# Copyright (c) 2010, Yahoo! Inc.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License"). You may 
 # obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. 
 # See accompanying LICENSE file for terms.
 #
-# All rights reserved.
 #
 #
 
