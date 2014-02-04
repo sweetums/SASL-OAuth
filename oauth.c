@@ -592,7 +592,7 @@ int oauth_client_refresh_token(void *conn_context,
       SETERROR( params->utils, errbuff);
       return SASL_BADPROT;
     }    
-    jobj = json_loads(text->curl.data, &jerror);
+    jobj = json_loads(text->curl.data, 0, &jerror);
     if (!jobj) {
 	SETERROR( params->utils, "JSON parse failed.");
 	return SASL_BADPROT;
@@ -721,7 +721,7 @@ int oauth_client_get_access(void *conn_context,
       SETERROR( params->utils, errbuff);
       return SASL_BADPROT;
     }    
-    jobj = json_loads(text->curl.data, &jerror);
+    jobj = json_loads(text->curl.data, 0, &jerror);
     if (!jobj) {
 	SETERROR( params->utils, "JSON parse failed.");
 	return SASL_BADPROT;
